@@ -18,7 +18,9 @@ defmodule Cards do
     def shuffle(deck) do
         Enum.shuffle(deck)
     end
-
+    @doc """
+        
+    """
     def contains?(deck, card) do
         Enum.member?(deck, card)
     end
@@ -26,6 +28,7 @@ defmodule Cards do
 
     @doc """
         Deals out a hand with the creted deck. `hand_size` limits the number of cards dealt.
+
     ## Examples
 
         iex> deck = Cards.create_deck
